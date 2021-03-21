@@ -263,9 +263,17 @@ O Atributo src
 ---------------------------------------------------
 
 O atributo alt
- O altatributo obrigatório para a <img> tag especifica um texto alternativo para uma imagem, se a imagem por algum motivo não puder ser exibida. Isso pode ser devido a uma conexão lenta ou um erro no srcatributo, ou se o usuário usa um leitor de tela.
+ O alt atributo obrigatório para a <img> tag especifica um texto alternativo para uma imagem, se a imagem por algum motivo não puder ser exibida. Isso pode ser devido a uma conexão lenta ou um erro no srcatributo, ou se o usuário usa um leitor de tela.
 
 Exemplo
  <img src="img_girl.jpg" alt="Girl with a jacket">
 
 ---------------------------------------------------
+
+O atributo de estilo
+ O style atributo é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.
+
+ Exemplo
+ <p style="color:red;">This is a red paragraph.</p>
+
+ ---------------------------------------------------
