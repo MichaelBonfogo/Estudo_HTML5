@@ -1,0 +1,271 @@
+Referência:
+https://www.w3schools.com/html/default.asp
+
+Este tutorial segue o padrão HTML5 mais recente.
+
+---------------------------------------------------
+---------------------------------------------------
+Estudo de HTML5.
+---------------------------------------------------
+---------------------------------------------------
+
+Introdução ao HTML
+
+ HTML é a linguagem de marcação padrão para a criação de páginas da web.
+
+ O que é HTML?
+ HTML significa Hyper Text Markup Language
+ HTML é a linguagem de marcação padrão para a criação de páginas da web
+ HTML descreve a estrutura de uma página da web
+ HTML consiste em uma série de elementos
+ Os elementos HTML informam ao navegador como exibir o conteúdo
+ Os elementos HTML identificam partes de conteúdo como "isto é um título", "isto é um parágrafo", "isto é um link", etc.
+
+Um Documento HTML Simples
+
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <title>Page Title</title>
+ </head>
+
+ <body>
+
+ <h1>Este é um título</h1>
+ <p>Este é um paragrafo.</p>
+
+ </body>
+
+</html>
+
+---------------------------------------------------
+
+Exemplo Explicado
+ A <!DOCTYPE html>declaração define que este documento é um documento HTML5
+ O <html>elemento é o elemento raiz de uma página HTML
+
+ O <head>elemento contém metainformações sobre a página HTML
+ O <title>elemento especifica um título para a página HTML (que é mostrado na barra de título do navegador ou na guia da página)
+
+ O <body>elemento define o corpo do documento e é um contêiner para todo o conteúdo visível, como títulos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.
+ O <h1>elemento define um grande título
+ O <p>elemento define um parágrafo
+
+---------------------------------------------------
+
+O que é um elemento HTML?
+Um elemento HTML é definido por uma tag inicial, algum conteúdo e uma tag final:
+< tagname > O conteúdo vai aqui ... < / tagname >
+
+O elemento HTML é tudo, desde a tag inicial até a tag final:
+< h1 > Meu primeiro título < / h1 >
+< p > Meu primeiro parágrafo. < / p >
+
+Nota: alguns elementos HTML não têm conteúdo (como o elemento <br>). Esses elementos são chamados de elementos vazios. Os elementos vazios não possuem uma tag de finalização!
+
+---------------------------------------------------
+
+Navegadores da web:
+O objetivo de um navegador da web (Chrome, Edge, Firefox, Safari) é ler documentos HTML e exibi-los corretamente.
+Um navegador não exibe as tags HTML, mas as usa para determinar como exibir o documento:
+
+---------------------------------------------------
+
+Estrutura da página HTML
+Abaixo está uma visualização da estrutura de uma página HTML:
+
+<html>
+
+ <head>
+  <title> Título da página </title>
+ </head>
+
+ <body>
+  <h1> Este é um título </h1>
+  <p> Este é um parágrafo. </p>
+  <p> Este é outro parágrafo. </p>
+ </body>
+
+</html>
+---------------------------------------------------
+---------------------------------------------------
+
++ Etapa 1: Abra um editor de texto: Ex VsCode
+
++ Etapa 2: Escreva algum HTML
+ Escreva ou copie o seguinte código HTML no Bloco de notas:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+
+<p>My first paragraph.</p>
+
+</body>
+</html>
+
++ Etapa 3: Salve a página HTML
+Salve o arquivo no seu computador. Selecione Arquivo> Salvar como no menu Bloco de notas.
+
+Nomeie o arquivo "index.htm" e defina a codificação para UTF-8 (que é a codificação preferida para arquivos HTML).
+
++ Etapa 4: Visualize a página HTML em seu navegador
+Abra o arquivo HTML salvo em seu navegador favorito (clique duas vezes no arquivo ou clique com o botão direito - e escolha "Abrir com").
+
+---------------------------------------------------
+---------------------------------------------------
+
+Documentos HTML
+ Todos os documentos HTML deve começar com uma declaração do tipo de documento: <!DOCTYPE html>.
+ O próprio documento HTML começa <html> e termina com </html>.
+ A parte visível do documento HTML está entre <body>e </body>.
+
+---------------------------------------------------
+
+A declaração <! DOCTYPE>
+ A <!DOCTYPE>declaração representa o tipo de documento e ajuda os navegadores a exibir as páginas da web corretamente.
+ Deve aparecer apenas uma vez, no topo da página (antes de quaisquer tags HTML).
+ A <!DOCTYPE>declaração não diferencia maiúsculas de minúsculas.
+ A <!DOCTYPE>declaração para HTML5 é: <!DOCTYPE html>
+
+---------------------------------------------------
+
+Cabeçalhos HTML
+ Os cabeçalhos HTML são definidos com as tags <h1>para <h6>.
+ <h1>define o título mais importante. <h6>define o título menos importante: 
+
+ Exemplo
+ <h1>This is heading 1</h1>
+ <h2>This is heading 2</h2>
+ <h3>This is heading 3</h3>
+
+---------------------------------------------------
+
+Parágrafos HTML
+ Os parágrafos HTML são definidos com a <p>tag:
+
+ Exemplo
+ <p>This is a paragraph.</p>
+ <p>This is another paragraph.</p>
+
+---------------------------------------------------
+
+Links HTML
+ Os links HTML são definidos com a <a> tag:
+
+ Exemplo
+ <a href = "https://www.w3schools.com"> This is a link </a>
+
+ O destino do link é especificado no href atributo. 
+ Os atributos são usados ​​para fornecer informações adicionais sobre os elementos HTML.
+
+---------------------------------------------------
+
+Imagens HTML
+ As imagens HTML são definidas com a <img> tag.
+ O arquivo de origem ( src ), o texto alternativo ( alt) width, e height são fornecidos como atributos:
+
+ Exemplo
+ <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+---------------------------------------------------
+
+Como visualizar o código-fonte HTML?
+ Você já viu uma página da Web e se perguntou "Ei! Como eles fizeram isso?"
+
+ Ver código-fonte HTML:
+  Clique com o botão direito em uma página HTML e selecione "Exibir código-fonte" (no Chrome) ou "Exibir código-fonte" (no Edge) ou algo semelhante em outros navegadores. Isso abrirá uma janela contendo o código-fonte HTML da página.
+
+ Inspecione um elemento HTML:
+  Clique com o botão direito em um elemento (ou em uma área em branco) e escolha "Inspecionar" ou "Inspecionar elemento" para ver de que elementos são compostos (você verá o HTML e o CSS). Você também pode editar o HTML ou CSS rapidamente no painel Elementos ou Estilos que é aberto.
+
+---------------------------------------------------
+---------------------------------------------------
+
+Elementos HTML aninhados
+ Os elementos HTML podem ser aninhados (isso significa que os elementos podem conter outros elementos).
+ Todos os documentos HTML consistem em elementos HTML aninhados.
+ 
+ O exemplo que se segue contém quatro elementos HTML ( <html>, <body>, <h1> e <p>):
+
+ Exemplo
+ <!DOCTYPE html>
+ <html>
+ <body>
+
+ <h1>My First Heading</h1>
+ <p>My first paragraph.</p>
+
+ </body>
+ </html>
+
+
+ Nunca ignore a tag final
+ Alguns elementos HTML serão exibidos corretamente, mesmo se você esquecer a tag final:
+ No entanto, nunca confie nisso! Resultados inesperados e erros podem ocorrer se você esquecer a tag final!
+
+ Elementos HTML vazios
+ Os elementos HTML sem conteúdo são chamados de elementos vazios.
+ A <br>tag define uma quebra de linha e é um elemento vazio sem uma tag de fechamento:
+  Exemplo
+  <p>This is a <br> paragraph with a line break.</p>
+
+ HTML não diferencia maiúsculas de minúsculas
+ As tags HTML não diferenciam maiúsculas de minúsculas: <P>significa o mesmo que <p>.
+ O padrão HTML não requer tags em minúsculas, mas o W3C recomenda minúsculas em HTML e exige minúsculas para tipos de documentos mais restritos, como XHTML.
+ Na W3Schools, sempre usamos nomes de tags em minúsculas.
+
+ Para obter uma lista completa de todas as tags HTML disponíveis, visite nossa Referência de tags HTML : https://www.w3schools.com/tags/default.asp
+
+---------------------------------------------------
+---------------------------------------------------
+
+Atributos HTML
+ Os atributos HTML fornecem informações adicionais sobre os elementos HTML.
+
+ Atributos HTML
+ Todos os elementos HTML podem ter atributos
+ Os atributos fornecem informações adicionais sobre os elementos
+ Os atributos são sempre especificados na tag inicial
+ Os atributos geralmente vêm em pares nome / valor como: nome = "valor"
+
+ O atributo href
+ A <a>tag define um hiperlink. O hrefatributo especifica o URL da página para a qual o link vai:
+
+ Exemplo
+ <a href="https://www.w3schools.com">Visit W3Schools</a>
+
+---------------------------------------------------
+
+O Atributo src
+ A <img>tag é usada para inserir uma imagem em uma página HTML. O srcatributo especifica o caminho para a imagem a ser exibida:
+
+ Exemplo
+ <img src="img_girl.jpg">
+
+ Existem duas maneiras de especificar o URL no src atributo:
+  1. URL absoluto - Links para uma imagem externa hospedada em outro site. Exemplo: src = "https://www.w3schools.com/images/img_girl.jpg".
+   Observações: as imagens externas podem estar protegidas por direitos autorais. Se você não obtiver permissão para usá-lo, pode estar violando as leis de direitos autorais. Além disso, você não pode controlar imagens externas; ele pode ser removido ou alterado repentinamente.
+
+  2. URL relativo - Links para uma imagem hospedada no site. Aqui, o URL não inclui o nome do domínio. Se o URL começar sem barra, ele será relativo à página atual. Exemplo: src = "img_girl.jpg". Se o URL começar com uma barra, será relativo ao domínio. Exemplo: src = "/ images / img_girl.jpg".
+
+ Dica: quase sempre é melhor usar URLs relativos. Eles não irão quebrar se você mudar de domínio.
+
+ + Os atributos de largura e altura: widthe - height.
+ A <img>tag também deve conter os atributos widthe height, que especificam a largura e a altura da imagem (em pixels):
+
+ Exemplo
+ <img src="img_girl.jpg" width="500" height="600">
+
+---------------------------------------------------
+
+O atributo alt
+ O altatributo obrigatório para a <img> tag especifica um texto alternativo para uma imagem, se a imagem por algum motivo não puder ser exibida. Isso pode ser devido a uma conexão lenta ou um erro no srcatributo, ou se o usuário usa um leitor de tela.
+
+Exemplo
+ <img src="img_girl.jpg" alt="Girl with a jacket">
+
+---------------------------------------------------
