@@ -276,4 +276,75 @@ O atributo de estilo
  Exemplo
  <p style="color:red;">This is a red paragraph.</p>
 
- ---------------------------------------------------
+---------------------------------------------------
+
+O atributo lang
+ Você deve sempre incluir o lang atributo dentro da <html>tag, para declarar o idioma da página web. Isso serve para auxiliar os mecanismos de pesquisa e navegadores.
+
+ O exemplo a seguir especifica o inglês como o idioma:
+
+<!DOCTYPE html>
+ <html lang="en">
+  <body>
+  ...
+  </body>
+ </html>
+
+Os códigos de país também podem ser adicionados ao código de idioma no lang atributo. Portanto, os dois primeiros caracteres definem o idioma da página HTML e os dois últimos caracteres definem o país.
+
+O exemplo a seguir especifica inglês como o idioma e Estados Unidos como o país:
+
+<!DOCTYPE html>
+ <html lang="en-US">
+  <body>
+   ...
+  </body>
+ </html>
+
+Você pode ver todos os códigos de idioma em nossa Referência de código de idioma HTML: https://www.w3schools.com/tags/ref_language_codes.asp
+
+---------------------------------------------------
+
+O título Atributo
+ O title atributo define algumas informações extras sobre um elemento.
+ O valor do atributo title será exibido como uma dica de ferramenta quando você passar o mouse sobre o elemento:
+
+ Exemplo
+ <p title="I'm a tooltip">This is a paragraph.</p>
+
+---------------------------------------------------
+
+Sugerimos: Sempre use atributos em minúsculas
+ O padrão HTML não requer nomes de atributos em letras minúsculas.
+ O atributo de título (e todos os outros atributos) pode ser escrito em maiúsculas ou minúsculas, como título ou TÍTULO .
+
+ No entanto, o W3C recomenda atributos em minúsculas em HTML e exige atributos em minúsculas para tipos de documentos mais restritos, como XHTML.
+ No W3Schools, sempre usamos nomes de atributos em letras minúsculas.
+
+ Sugerimos: Sempre cite valores de atributos
+ O padrão HTML não requer aspas em torno dos valores dos atributos.
+ No entanto, o W3C recomenda citações em HTML e exige citações para tipos de documentos mais restritos, como XHTML.
+
+ Bom:
+ <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+
+ Mau:
+ <a href=https://www.w3schools.com/html/>Visit our HTML tutorial</a>
+ Às vezes você precisa usar aspas. Este exemplo não exibirá o atributo title corretamente, porque contém um espaço:
+
+ Exemplo
+ <p title=About W3Schools>
+
+  Na W3Schools, sempre usamos aspas em torno dos valores dos atributos.
+
+---------------------------------------------------
+
+Citações simples ou duplas?
+ Aspas duplas em torno dos valores de atributos são as mais comuns em HTML, mas também podem ser usadas aspas simples.
+ Em algumas situações, quando o próprio valor do atributo contém aspas duplas, é necessário usar aspas simples:
+
+ <p title='John "ShotGun" Nelson'>
+ Ou vice-versa:
+ <p title="John 'ShotGun' Nelson">
+
+---------------------------------------------------
