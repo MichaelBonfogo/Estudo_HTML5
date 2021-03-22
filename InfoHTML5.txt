@@ -576,3 +576,220 @@ Alinhamento de Texto
   <p style="text-align:center;">Centered paragraph.</p>
 
 ---------------------------------------------------
+---------------------------------------------------
+
+Formatação de Texto HTML
+ O HTML contém vários elementos para definir o texto com um significado especial.
+
+ 
+<html>
+ <body>
+
+  <p><b>This text is bold</b></p>
+  <p><i>This text is italic</i></p>
+  <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+
+ </body>
+</html>
+
+Elementos de formatação HTML
+ Os elementos de formatação foram projetados para exibir tipos especiais de texto:
+
+ <b> - Texto em negrito
+ <strong> - texto importante
+ <i> - texto em itálico
+ <em> - Texto enfatizado
+ <mark> - texto marcado
+ <small> - Texto menor
+ <del> - texto excluído
+ <ins> - texto inserido
+ <sub> - Texto subscrito
+ <sup> - Texto sobrescrito
+
+Elementos HTML <b> e <strong>
+ O <b>elemento HTML define o texto em negrito, sem nenhuma importância extra.
+ Exemplo
+  <b>This text is bold</b>
+ 
+ O <strong> elemento HTML define o texto com grande importância. O conteúdo interno é normalmente exibido em negrito.
+ Exemplo
+ <strong>This text is important!</strong>
+
+---------------------------------------------------
+
+Elementos HTML <i> e <em>
+ O <i>elemento HTML define uma parte do texto em uma voz ou humor alternativo. O conteúdo interno é normalmente exibido em itálico.
+ Dica: a <i>tag é frequentemente usada para indicar um termo técnico, uma frase de outro idioma, um pensamento, um nome de navio, etc.
+
+Exemplo
+ <i>This text is italic</i>
+ O <em>elemento HTML define o texto enfatizado. O conteúdo interno é normalmente exibido em itálico.
+
+ Dica: um leitor de tela pronuncia as palavras <em> com ênfase, usando ênfase verbal.
+
+ Exemplo
+ <em>This text is emphasized</em>
+
+---------------------------------------------------
+
+Elemento HTML <small>
+ O <small>elemento HTML define um texto menor:
+
+ Exemplo
+ <small>This is some smaller text.</small>
+
+---------------------------------------------------
+
+Elemento HTML <mark>
+ O <mark>elemento HTML define o texto que deve ser marcado ou destacado:
+
+ Exemplo
+ <p>Do not forget to buy <mark>milk</mark> today.</p>
+
+---------------------------------------------------
+
+Elemento HTML <del>
+ O <del>elemento HTML define o texto que foi excluído de um documento. Os navegadores geralmente riscarão uma linha no texto excluído:
+
+ Exemplo
+ <p>My favorite color is <del>blue</del> red.</p>
+
+---------------------------------------------------
+
+Elemento HTML <ins>
+ O <ins>elemento HTML define um texto que foi inserido em um documento. Os navegadores geralmente sublinham o texto inserido:
+
+ Exemplo
+ <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+---------------------------------------------------
+
+Elemento HTML <sub>
+ O <sub>elemento HTML define o texto subscrito. O texto subscrito aparece meio caractere abaixo da linha normal e, às vezes, é renderizado em uma fonte menor. O texto subscrito pode ser usado para fórmulas químicas, como H 2 O:
+ 
+ Exemplo
+ <p>This is <sub>subscripted</sub> text.</p>
+
+---------------------------------------------------
+
+Elemento HTML <sup>
+ O <sup>elemento HTML define o texto sobrescrito. O texto sobrescrito aparece com meio caractere acima da linha normal e, às vezes, é renderizado em uma fonte menor. Texto sobrescrito pode ser usado para notas de rodapé, como WWW [1] :
+
+ Exemplo
+ <p>This is <sup>superscripted</sup> text.</p>
+
+---------------------------------------------------
+
+Citação HTML e elementos de citação
+ Neste capítulo, irá percorrer os <blockquote>, <q>, <abbr>, <address>, <cite>, e <bdo>elementos HTML.
+
+HTML <blockquote> para citações
+ O <blockquote>elemento HTML define uma seção citada de outra fonte.
+ Os navegadores geralmente recuam os <blockquote>elementos.
+
+ Exemplo
+
+<!DOCTYPE html>
+<html>
+ <body>
+ <p>Browsers usually indent blockquote elements.</p>
+
+ <blockquote cite="http://www.worldwildlife.org/who/index.html">
+  For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally.
+ </blockquote>
+ </body>
+</html>
+
+---------------------------------------------------
+
+HTML <q> para citações curtas
+ A <q>tag HTML define uma citação curta.
+ Os navegadores normalmente inserem aspas entre aspas.
+
+ Exemplo
+  <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+---------------------------------------------------
+
+HTML <abbr> para abreviações
+ A <abbr>tag HTML define uma abreviatura ou acrônimo, como "HTML", "CSS", "Sr.", "Dr.", "ASAP", "ATM".
+ As abreviações de marcação podem fornecer informações úteis para navegadores, sistemas de tradução e mecanismos de pesquisa.
+ Dica: Use o atributo de título global para mostrar a descrição da abreviatura / acrônimo ao passar o mouse sobre o elemento. 
+
+ Exemplo
+  <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+---------------------------------------------------
+
+HTML <address> para informações de contato
+ A <address>tag HTML define as informações de contato do autor / proprietário de um documento ou artigo.
+ As informações de contato podem ser um endereço de e-mail, URL, endereço físico, número de telefone, identificador de mídia social, etc.
+ O texto no <address>elemento geralmente é renderizado em itálico e os navegadores sempre adicionarão uma quebra de linha antes e depois do <address>elemento.
+
+ 
+ <!DOCTYPE html>
+ <html>
+  <body>
+
+  <p>The HTML address element defines contact information (author/owner) of a document or article.</p>
+
+  <address>
+  Written by John Doe.<br> 
+  Visit us at:<br>
+  Example.com<br>
+  Box 564, Disneyland<br>
+  USA
+  </address>
+
+  </body>
+</html>
+
+---------------------------------------------------
+
+HTML <cite> para título de trabalho
+ A <cite>tag HTML define o título de um trabalho criativo (por exemplo, um livro, um poema, uma música, um filme, uma pintura, uma escultura, etc.).
+ Nota: o nome de uma pessoa não é o título de uma obra.
+ O texto no <cite>elemento geralmente é processado em itálico .
+
+Exemplo
+ <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+ HTML <bdo> para substituição bidirecional
+ BDO significa substituição bidirecional.
+
+---------------------------------------------------
+
+A <bdo>tag HTML é usada para substituir a direção do texto atual:
+
+ Exemplo
+  <bdo dir="rtl">This text will be written from right to left</bdo>
+
+Este paragrafo será impresso escrito da direita para a esquerda, com as palavra ao contrario.
+
+---------------------------------------------------
+---------------------------------------------------
+
+Comentários HTML
+ Os comentários HTML não são exibidos no navegador, mas podem ajudar a documentar seu código-fonte HTML.
+
+ Tags de comentário HTML
+ Você pode adicionar comentários ao código-fonte HTML usando a seguinte sintaxe:
+ <!-- Write your comments here -->
+ Observe que há um ponto de exclamação (!) Na tag inicial, mas não na tag final.
+ Nota: Os comentários não são exibidos pelo navegador, mas podem ajudar a documentar seu código-fonte HTML.
+ Com comentários, você pode colocar notificações e lembretes em seu código HTML:
+
+ Exemplo
+ <!-- This is a comment -->
+
+ <p>This is a paragraph.</p>
+
+ <!-- Remember to add more information here -->
+ Os comentários também são ótimos para depurar HTML, porque você pode comentar as linhas de código HTML, uma de cada vez, para procurar erros:
+
+ Exemplo
+ <!-- Do not display this image at the moment
+ <img border="0" src="pic_trulli.jpg" alt="Trulli">
+ --> 
+
+---------------------------------------------------
+---------------------------------------------------
