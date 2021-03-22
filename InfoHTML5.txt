@@ -405,3 +405,174 @@ Parágrafos HTML
  <p>This is another paragraph.</p>
 
 ---------------------------------------------------
+
+Display HTML
+ Você não pode ter certeza de como o HTML será exibido.
+ Telas grandes ou pequenas e janelas redimensionadas criarão resultados diferentes.
+ Com HTML, você não pode alterar a exibição adicionando espaços extras ou linhas extras em seu código HTML.
+ O navegador removerá automaticamente quaisquer espaços e linhas extras quando a página for exibida:
+
+Exemplo
+ <p>
+  This paragraph
+  contains a lot of lines
+  in the source code,
+  but the browser
+  ignores it.
+ </p>
+
+ <p>
+  This paragraph
+  contains         a lot of spaces
+  in the source         code,
+  but the        browser
+  ignores it.
+</p>
+---------------------------------------------------
+
+Regras horizontais de HTML
+ A <hr>tag define uma quebra temática em uma página HTML e geralmente é exibida como uma régua horizontal.
+ O <hr>elemento é usado para separar o conteúdo (ou definir uma mudança) em uma página HTML: Esta separação ocorre com um traço na tela.
+
+ <h1>This is heading 1</h1>
+ <p>This is some text.</p>
+ <hr>
+
+ <h2>This is heading 2</h2>
+ <p>This is some other text.</p>
+ <hr>
+
+ obs: A <hr>tag é uma tag vazia, o que significa que não possui tag final.
+
+---------------------------------------------------
+
+Quebras de linha HTML
+ O <br>elemento HTML define uma quebra de linha.
+
+ Use <br>se quiser uma quebra de linha (uma nova linha) sem iniciar um novo parágrafo:
+
+ Exemplo
+  <p>This is<br>a paragraph<br>with line breaks.</p>
+
+obs: A <br>tag é uma tag vazia, o que significa que não possui tag final.
+
+---------------------------------------------------
+
+O problema do poema
+ Este poema será exibido em uma única linha:
+
+Exemplo
+ <p>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+ </p>
+
+Solução - O elemento HTML <pre>
+ O <pre>elemento HTML define o texto pré-formatado.
+ O texto dentro de um <pre>elemento é exibido em uma fonte de largura fixa (geralmente Courier) e preserva espaços e quebras de linha:
+
+ Exemplo
+ <pre>
+   My Bonnie lies over the ocean.
+
+   My Bonnie lies over the sea.
+
+   My Bonnie lies over the ocean.
+
+   Oh, bring back my Bonnie to me.
+ </pre>
+
+---------------------------------------------------
+---------------------------------------------------
+
+Estilos HTML
+ O style atributo HTML é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.
+
+<!DOCTYPE html>
+ <html>
+  <body>
+
+   <p>I am normal</p>
+   <p style="color:red;">I am red</p>
+   <p style="color:blue;">I am blue</p>
+   <p style="font-size:50px;">I am big</p>
+
+  </body>
+ </html>
+
+ O atributo de estilo HTML
+ Definir o estilo de um elemento HTML pode ser feito com o style atributo.
+ O style atributo HTML possui a seguinte sintaxe:
+  <tagname style="property:value;">
+
+ A propriedade é uma propriedade CSS. O valor é um valor CSS.
+
+---------------------------------------------------
+
+Cor de fundo
+ A background-color propriedade CSS define a cor de fundo de um elemento HTML.
+
+ Exemplo
+  Defina a cor de fundo de uma página como pó azul:
+
+ <body style="background-color:powderblue;">
+
+  <h1>This is a heading</h1>
+  <p>This is a paragraph.</p>
+
+ </body>
+
+---------------------------------------------------
+
+ Exemplo
+ Defina a cor de fundo para dois elementos diferentes:
+
+  <body>
+
+   <h1 style="background-color:powderblue;">This is a heading</h1>
+   <p style="background-color:tomato;">This is a paragraph.</p>
+
+  </body>
+
+---------------------------------------------------
+
+Cor do texto
+ A color propriedade CSS define a cor do texto para um elemento HTML:
+
+ Exemplo
+  <h1 style="color:blue;">This is a heading</h1>
+  <p style="color:red;">This is a paragraph.</p>
+
+---------------------------------------------------
+
+Fontes
+ A font-family propriedade CSS define a fonte a ser usada para um elemento HTML:
+
+ Exemplo
+  <h1 style="font-family:verdana;">This is a heading</h1>
+  <p style="font-family:courier;">This is a paragraph.</p>
+
+---------------------------------------------------
+
+Tamanho do texto
+ A font-size propriedade CSS define o tamanho do texto para um elemento HTML:
+
+ Exemplo
+  <h1 style="font-size:300%;">This is a heading</h1>
+  <p style="font-size:160%;">This is a paragraph.</p>
+
+---------------------------------------------------
+
+Alinhamento de Texto
+ A text-align propriedade CSS define o alinhamento horizontal do texto para um elemento HTML:
+
+ Exemplo
+  <h1 style="text-align:center;">Centered Heading</h1>
+  <p style="text-align:center;">Centered paragraph.</p>
+
+---------------------------------------------------
