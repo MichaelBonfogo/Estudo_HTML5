@@ -793,3 +793,271 @@ Comentários HTML
 
 ---------------------------------------------------
 ---------------------------------------------------
+
+Cores HTML
+ As cores HTML são especificadas com nomes de cores predefinidos ou com valores RGB, HEX, HSL, RGBA ou HSLA.
+
+ Nomes de Cores
+  Em HTML, uma cor pode ser especificada usando um nome de cor:
+  Tomate
+  laranja
+  Trapaceiro azul
+  MediumSeaGreen
+  cinza
+  Azul ardósia
+  Tolet
+  Cinza claro
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:Tomato;">Tomato</h1>
+<h1 style="background-color:Orange;">Orange</h1>
+<h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+<h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+<h1 style="background-color:Gray;">Gray</h1>
+<h1 style="background-color:SlateBlue;">SlateBlue</h1>
+<h1 style="background-color:Violet;">Violet</h1>
+<h1 style="background-color:LightGray;">LightGray</h1>
+
+</body>
+</html>
+
+---------------------------------------------------
+
+Cores HTML RGB e RGBA
+ Um valor de cor RGB representa as fontes de luz VERMELHA, VERDE e AZUL.
+ Um valor de cor RGBA é uma extensão de RGB com um canal Alfa (opacidade).
+
+ Valores de cor RGB
+ Em HTML, uma cor pode ser especificada como um valor RGB, usando esta fórmula:
+
+ rgb ( vermelho, verde , azul )
+
+ Cada parâmetro (vermelho, verde e azul) define a intensidade da cor com um valor entre 0 e 255.
+ Isso significa que existem 256 x 256 x 256 = 16777216 cores possíveis!
+ Por exemplo, rgb (255, 0, 0) é exibido como vermelho, porque vermelho está definido com seu valor mais alto (255) e os outros dois (verde e azul) são definidos como 0.
+ Outro exemplo, rgb (0, 255, 0) é exibido como verde, porque verde é definido com seu valor mais alto (255) e os outros dois (vermelho e azul) são definidos como 0.
+ Para exibir o preto, defina todos os parâmetros de cor para 0, como este: rgb (0, 0, 0).
+ Para exibir o branco, defina todos os parâmetros de cor para 255, como este: rgb (255, 255, 255).
+ Experimente misturar os valores RGB abaixo:
+
+ <!DOCTYPE html>
+ <html>
+ <body>
+
+ <h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+ <h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+ <h1 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
+ <h1 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h1>
+ <h1 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h1>
+ <h1 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h1>
+
+ </body>
+ </html>
+
+ ---------------------------------------------------
+
+ Tons de cinza
+ Tons de cinza são frequentemente definidos usando valores iguais para todos os três parâmetros:
+
+ <!DOCTYPE html>
+ <html>
+ <body>
+
+ <h1 style="background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</h1>
+ <h1 style="background-color:rgb(100, 100, 100);">rgb(100, 100, 100)</h1>
+ <h1 style="background-color:rgb(140, 140, 140);">rgb(140, 140, 140)</h1>
+ <h1 style="background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</h1>
+ <h1 style="background-color:rgb(200, 200, 200);">rgb(200, 200, 200)</h1>
+ <h1 style="background-color:rgb(240, 240, 240);">rgb(240, 240, 240)</h1>
+
+ </body>
+ </html>
+
+---------------------------------------------------
+
+Valores de cores RGBA
+ Os valores de cores RGBA são uma extensão dos valores de cores RGB com um canal Alfa - que especifica a opacidade de uma cor.
+ Um valor de cor RGBA é especificado com:
+ rgba ( vermelho, verde , azul, alfa )
+ O parâmetro alfa é um número entre 0,0 (totalmente transparente) e 1,0 (nem um pouco transparente):
+
+ <!DOCTYPE html>
+ <html>
+ <body>
+
+ <h1 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+ <h1 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+ <h1 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h1>
+ <h1 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h1>
+ <h1 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h1>
+ <h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+
+ </body>
+ </html>
+
+---------------------------------------------------
+
+Cores HEX HTML
+ Uma cor hexadecimal é especificada com: #RRGGBB, onde os inteiros hexadecimais RR (vermelho), GG (verde) e BB (azul) especificam os componentes da cor.
+ Valores de cor HEX
+ Em HTML, uma cor pode ser especificada usando um valor hexadecimal na forma:
+
+ # rrggbb
+
+ Onde rr (vermelho), gg (verde) e bb (azul) são valores hexadecimais entre 00 e ff (igual ao decimal 0-255).
+ Por exemplo, # ff0000 é exibido em vermelho, porque o vermelho é definido com seu valor mais alto (ff) e os outros dois (verde e azul) são definidos como 00.
+ Outro exemplo, # 00ff00 é exibido como verde, porque o verde é definido com seu valor mais alto (ff) e os outros dois (vermelho e azul) são definidos como 00.
+ Para exibir o preto, defina todos os parâmetros de cor para 00, como este: # 000000.
+ Para exibir o branco, defina todos os parâmetros de cor para ff, assim: #ffffff.
+
+ <!DOCTYPE html>
+ <html>
+ <body>
+
+ <h1 style="background-color:#ff0000;">#ff0000</h1>
+ <h1 style="background-color:#0000ff;">#0000ff</h1>
+ <h1 style="background-color:#3cb371;">#3cb371</h1>
+ <h1 style="background-color:#ee82ee;">#ee82ee</h1>
+ <h1 style="background-color:#ffa500;">#ffa500</h1>
+ <h1 style="background-color:#6a5acd;">#6a5acd</h1>
+
+ </body>
+ </html>
+
+Tons de cinza
+ Tons de cinza são frequentemente definidos usando valores iguais para todos os três parâmetros:
+
+ <!DOCTYPE html>
+ <html>
+ <body>
+
+ <h1 style="background-color:#404040;">#404040</h1>
+ <h1 style="background-color:#686868;">#686868</h1>
+ <h1 style="background-color:#a0a0a0;">#a0a0a0</h1>
+ <h1 style="background-color:#bebebe;">#bebebe</h1>
+ <h1 style="background-color:#dcdcdc;">#dcdcdc</h1>
+ <h1 style="background-color:#f8f8f8;">#f8f8f8</h1>
+
+ </body>
+ </html>
+
+---------------------------------------------------
+
+Cores HTML HSL e HSLA
+ HSL significa matiz, saturação e luminosidade.
+ Os valores de cor HSLA são uma extensão do HSL com um canal Alfa (opacidade).
+
+ Valores de cor HSL
+ Em HTML, uma cor pode ser especificada usando matiz, saturação e luminosidade (HSL) na forma:
+
+ hsl ( matiz , saturação , luminosidade )
+ Matiz é um grau na roda de cores de 0 a 360. 0 é vermelho, 120 é verde e 240 é azul.
+ A saturação é um valor percentual, 0% significa um tom de cinza e 100% é a cor total.
+ A luminosidade também é um valor percentual, 0% é preto e 100% é branco.
+
+ <!DOCTYPE html>
+ <html>
+ <body>
+
+ <h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+ <h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+ <h1 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+ <h1 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+ <h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+ <h1 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+
+ </body>
+ </html>
+
+---------------------------------------------------
+
+Saturação
+ A saturação pode ser descrita como a intensidade de uma cor.
+ 100% é cor pura, sem tons de cinza
+ 50% é 50% cinza, mas você ainda pode ver a cor.
+ 0% é completamente cinza, você não pode mais ver a cor.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h1>
+<h1 style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h1>
+<h1 style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h1>
+<h1 style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h1>
+<h1 style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h1>
+
+<p>With HSL colors, less saturation mean less color. 0% is completely gray.</p>
+
+</body>
+</html>
+
+---------------------------------------------------
+
+Leveza
+ A claridade de uma cor pode ser descrita como a quantidade de luz que você deseja dar à cor, onde 0% significa sem luz (preto), 50% significa 50% de luz (nem escuro nem claro) 100% significa claridade total (branco).
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h1>
+<h1 style="background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h1>
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h1>
+<h1 style="background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h1>
+<h1 style="background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h1>
+
+<p>With HSL colors, 0% lightness means black, and 100 lightness means white.</p>
+
+</body>
+</html>
+
+---------------------------------------------------
+ Tons de cinza
+  Tons de cinza são frequentemente definidos definindo o matiz e a saturação para 0, e ajuste a claridade de 0% a 100% para obter tons mais escuros / mais claros:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:hsl(0, 0%, 20%);">hsl(0, 0%, 20%)</h1>
+<h1 style="background-color:hsl(0, 0%, 30%);">hsl(0, 0%, 30%)</h1>
+<h1 style="background-color:hsl(0, 0%, 40%);">hsl(0, 0%, 40%)</h1>
+<h1 style="background-color:hsl(0, 0%, 60%);">hsl(0, 0%, 60%)</h1>
+<h1 style="background-color:hsl(0, 0%, 70%);">hsl(0, 0%, 70%)</h1>
+<h1 style="background-color:hsl(0, 0%, 90%);">hsl(0, 0%, 90%)</h1>
+
+</body>
+</html>
+---------------------------------------------------
+
+Valores de cor HSLA
+ Os valores de cor HSLA são uma extensão dos valores de cor HSL com um canal Alfa - que especifica a opacidade de uma cor.
+ Um valor de cor HSLA é especificado com:
+
+ hsla ( matiz, saturação , luminosidade, alfa )
+
+ O parâmetro alfa é um número entre 0,0 (totalmente transparente) e 1,0 (nem um pouco transparente):
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h1>
+
+</body>
+</html>
+---------------------------------------------------
+---------------------------------------------------
+
+Estilos HTML - CSS
