@@ -1,0 +1,135 @@
+JavaScript HTML DOM
+ Com o HTML DOM, o JavaScript pode acessar e alterar todos os elementos de um documento HTML.
+
+ O HTML DOM (Document Object Model)
+ Quando uma página da web é carregado, o navegador cria um D ocument O bject M odelo da página.
+
+ O modelo HTML DOM é construído como uma árvore de objetos :
+
+Com o modelo de objeto, o JavaScript obtém todo o poder de que precisa para criar HTML dinâmico:
+ JavaScript pode alterar todos os elementos HTML na página
+ JavaScript pode alterar todos os atributos HTML na página
+ JavaScript pode mudar todos os estilos CSS na página
+ JavaScript pode remover elementos e atributos HTML existentes
+ JavaScript pode adicionar novos elementos e atributos HTML
+ JavaScript pode reagir a todos os eventos HTML existentes na página
+ JavaScript pode criar novos eventos HTML na página
+
+O que você aprenderá
+Nos próximos capítulos deste tutorial, você aprenderá:
+ Como alterar o conteúdo dos elementos HTML
+ Como alterar o estilo (CSS) dos elementos HTML
+ Como reagir a eventos HTML DOM
+ Como adicionar e excluir elementos HTML
+
+Qual é o DOM?
+ O DOM é um padrão W3C (World Wide Web Consortium).
+ O DOM define um padrão para acessar documentos:
+ "O Document Object Model (DOM) do W3C é uma interface de plataforma e linguagem neutra que permite que programas e scripts acessem e atualizem dinamicamente o conteúdo, a estrutura e o estilo de um documento."
+
+O padrão W3C DOM é separado em 3 partes diferentes:
+ Core DOM - modelo padrão para todos os tipos de documentos
+ XML DOM - modelo padrão para documentos XML
+ HTML DOM - modelo padrão para documentos HTML
+
+O que é HTML DOM?
+ O HTML DOM é um modelo de objeto padrão e interface de programação para HTML. Ele define:
+ Os elementos HTML como objetos
+ As propriedades de todos os elementos HTML
+ Os métodos para acessar todos os elementos HTML
+ Os eventos para todos os elementos HTML
+Em outras palavras: o HTML DOM é um padrão de como obter, alterar, adicionar ou excluir elementos HTML.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+JavaScript - Métodos HTML DOM
+ Os métodos HTML DOM são ações que você pode executar (em elementos HTML).
+ As propriedades HTML DOM são valores (de elementos HTML) que você pode definir ou alterar.
+
+A Interface de Programação DOM
+ O HTML DOM pode ser acessado com JavaScript (e com outras linguagens de programação).
+ No DOM, todos os elementos HTML são definidos como objetos .
+ A interface de programação são as propriedades e métodos de cada objeto.
+ Uma propriedade é um valor que você pode obter ou definir (como alterar o conteúdo de um elemento HTML).
+ Um método é uma ação que você pode realizar (como adicionar ou excluir um elemento HTML).
+
+Exemplo
+O exemplo a seguir altera o conteúdo (o innerHTML) do <p>elemento com id="demo":
+
+Exemplo
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Page</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+</script>
+
+</body>
+</html>
+
+No exemplo acima, getElementByIdé um método , enquanto innerHTMLé uma propriedade .
+ document.getElementById("demo").innerHTML = "Hello World!";
+ objetoPrincipal.Metodo.Propriedade = "Valor";
+
+O método getElementById
+ A maneira mais comum de acessar um elemento HTML é usar o id do elemento.
+ No exemplo acima, o getElementById método usado id="demo" para encontrar o elemento.
+ 
+A propriedade innerHTML
+ A maneira mais fácil de obter o conteúdo de um elemento é usando a innerHTML propriedade.
+ A innerHTML propriedade é útil para obter ou substituir o conteúdo de elementos HTML.
+ A innerHTML propriedade pode ser usada para obter ou alterar qualquer elemento HTML, incluindo <html> e <body>.
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+Documento HTML DOM JavaScript
+ O objeto de documento HTML DOM é o proprietário de todos os outros objetos em sua página da web.
+
+O objeto de documento HTML DOM
+ O objeto de documento representa sua página da web.
+ Se você deseja acessar qualquer elemento em uma página HTML, sempre comece acessando o objeto de documento.
+ 
+ Abaixo estão alguns exemplos de como você pode usar o objeto de documento para acessar e manipular HTML.
+
+Encontrando Elementos HTML
+Method -	Description
+document.getElementById(id) - Find an element by element id
+document.getElementsByTagName(name) -	Find elements by tag name
+document.getElementsByClassName(name) -	Find elements by class name
+
+Alterando - Elementos HTML
+Property -	Description
+element.innerHTML =  new html content	Change the inner HTML of an element
+element.attribute = new value	Change the attribute value of an HTML element
+element.style.property = new style	Change the style of an HTML element
+
+Method -	Description
+element.setAttribute(attribute, value) -	Change the attribute value of an HTML element
+
+Adicionando e Excluindo Elementos
+Method	- Description
+document.createElement(element) -	Create an HTML element
+document.removeChild(element) -	Remove an HTML element
+document.appendChild(element) -	Add an HTML element
+document.replaceChild(new, old) - 	Replace an HTML element
+document.write(text) -	Write into the HTML output stream
+
+Adicionar manipuladores de eventos
+Method -	Description
+document.getElementById(id).onclick = function(){code} -	Adding event handler code to an onclick event
+
+Encontrar objetos HTML
+ O primeiro HTML DOM Nível 1 (1998), definiu 11 objetos HTML, coleções de objetos e propriedades. Eles ainda são válidos em HTML5.
+ Posteriormente, no HTML DOM Nível 3, mais objetos, coleções e propriedades foram adicionados.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+Elementos JavaScript HTML DOM
+ Esta página ensina como localizar e acessar elementos HTML em uma página HTML.
+
