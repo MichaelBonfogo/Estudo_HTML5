@@ -133,3 +133,171 @@ Encontrar objetos HTML
 Elementos JavaScript HTML DOM
  Esta página ensina como localizar e acessar elementos HTML em uma página HTML.
 
+Encontrando Elementos HTML
+ Freqüentemente, com JavaScript, você deseja manipular elementos HTML.
+
+Para fazer isso, você deve primeiro encontrar os elementos. Existem várias maneiras de fazer isso:
+ Encontrar elementos HTML por id
+ Encontrar elementos HTML por nome de tag
+ Encontrar elementos HTML por nome de classe
+ Encontrar elementos HTML por seletores CSS
+ Encontrar elementos HTML por coleções de objetos HTML
+
+Encontrando Elemento HTML por Id
+ A maneira mais fácil de encontrar um elemento HTML no DOM é usando o id do elemento.
+
+Este exemplo encontra o elemento com id="intro":
+
+Exemplo
+var myElement = document.getElementById("intro");
+
+Exemplo
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Finding HTML Elements by Id</h2>
+
+<p id="intro">Hello World!</p>
+<p>This example demonstrates the <b>getElementsById</b> method.</p>
+
+<p id="demo"></p>
+
+<script>
+var myElement = document.getElementById("intro");
+document.getElementById("demo").innerHTML = 
+"The text from the intro paragraph is " + myElement.innerHTML;
+</script>
+
+</body>
+</html>
+
+ Se o elemento for encontrado, o método retornará o elemento como um objeto (em myElement).
+ Se o elemento não for encontrado, myElement conterá null.
+----------------------------------------------------------------------
+
+Localização de elementos HTML por nome de tag
+ Este exemplo encontra todos os <p>elementos:
+
+Exemplo
+var x = document.getElementsByTagName("p");
+
+Exemplo
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Finding HTML Elements by Tag Name</h2>
+
+<p>Hello World!</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = 
+'The text in first paragraph (index 0) is: ' + x[0].innerHTML;
+</script>
+
+</body>
+</html>
+
+Este exemplo encontra o elemento com id="main"e, em seguida, encontra todos os <p>elementos dentro de "main":
+
+Exemplo
+var x = document.getElementById("main");
+var y = x.getElementsByTagName("p");
+
+Exemplo
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Finding HTML Elements by Tag Name</h2>
+
+<div id="main">
+<p>The DOM is very useful.</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+</div>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("main");
+var y = x.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+</script>
+
+</body>
+</html>
+
+----------------------------------------------------------------------
+
+Encontrando Elementos HTML por Nome de Classe
+ Se você quiser encontrar todos os elementos HTML com o mesmo nome de classe, use getElementsByClassName().
+ Este exemplo retorna uma lista de todos os elementos com class="intro".
+
+Exemplo
+var x = document.getElementsByClassName("intro");
+
+Exemplo
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Finding HTML Elements by Class Name</h2>
+
+<p>Hello World!</p>
+
+<p class="intro">The DOM is very useful.</p>
+<p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementsByClassName("intro");
+document.getElementById("demo").innerHTML = 'The first paragraph (index 0) with class="intro": ' + x[0].innerHTML;
+</script>
+
+</body>
+</html>
+
+----------------------------------------------------------------------
+
+Encontrar elementos HTML por seletores CSS
+ Se você deseja encontrar todos os elementos HTML que correspondem a um seletor CSS especificado (id, nomes de classes, tipos, atributos, valores de atributos, etc), use o querySelectorAll()método.
+ Este exemplo retorna uma lista de todos os <p>elementos com class="intro".
+
+Exemplo
+var x = document.querySelectorAll("p.intro");
+
+Exemplo
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Finding HTML Elements by Query Selector</h2>
+
+<p>Hello World!</p>
+
+<p class="intro">The DOM is very useful.</p>
+<p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = document.querySelectorAll("p.intro");
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) with class="intro": ' + x[0].innerHTML;
+</script>
+
+</body>
+</html>
+
+obs: O querySelectorAll()método não funciona no Internet Explorer 8 e em versões anteriores.
+
+----------------------------------------------------------------
+
+Encontrando Elementos HTML por Coleções de Objetos HTML
