@@ -301,3 +301,33 @@ obs: O querySelectorAll()método não funciona no Internet Explorer 8 e em vers�
 ----------------------------------------------------------------
 
 Encontrando Elementos HTML por Coleções de Objetos HTML
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
