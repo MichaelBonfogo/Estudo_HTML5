@@ -296,22 +296,475 @@ document.getElementById("demo").innerHTML =
 </body>
 </html>
 
-obs: O querySelectorAll()método não funciona no Internet Explorer 8 e em versões anteriores.
+obs: O querySelectorAll() método não funciona no Internet Explorer 8 e em versões anteriores.
 
 ----------------------------------------------------------------
 
 Encontrando Elementos HTML por Coleções de Objetos HTML
 
+ Este exemplo encontra o elemento do formulário com id="frm1", na coleção de formulários, e exibe todos os valores do elemento:
+
+Exemplo
+var x = document.forms["frm1"];
+var text = "";
+var i;
+for (i = 0; i < x.length; i++) {
+  text += x.elements[i].value + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+
+Os seguintes objetos HTML (e coleções de objetos) também estão acessíveis:
+
+document.anchors
+document.body
+document.documentElement
+document.embeds
+document.forms
+document.head
+document.images
+document.links
+document.scripts
+título do documento
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+JavaScript HTML DOM - Alterando HTML
+ O HTML DOM permite que o JavaScript altere o conteúdo dos elementos HTML.
+
+ Alterando o fluxo de saída HTML
+ JavaScript pode criar conteúdo HTML dinâmico:
+
+Data: Sex. 02 de abril de 2021 20:51:08 GMT-0300 (Horário Padrão de Brasília)
+Em JavaScript, document.write() pode ser usado para gravar diretamente no fluxo de saída HTML:
+
+Exemplo
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+document.write(Date());
+</script>
+
+</body>
+</html>
+
+Nunca use document.write()depois que o documento for carregado. Isso substituirá o documento.
+
+----------------------------------------------------------------
+Alterar o conteúdo HTML
+ A maneira mais fácil de modificar o conteúdo de um elemento HTML é usando a innerHTML propriedade. 
+ Para alterar o conteúdo de um elemento HTML, use esta sintaxe:
+
+document.getElementById(id).innerHTML = new HTML
+Este exemplo altera o conteúdo de um <p>elemento:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript can Change HTML</h2>
+
+<p id="p1">Hello World!</p>
+
+<script>
+document.getElementById("p1").innerHTML = "New text!";
+</script>
+
+<p>The paragraph above was changed by a script.</p>
+
+</body>
+</html>
 
 
+Exemplo explicado:
+ O documento HTML acima contém um <p>elemento comid="p1"
+ Usamos o HTML DOM para obter o elemento com id="p1"
+ Um JavaScript altera o conteúdo ( innerHTML) desse elemento para "Novo texto!"
+ Este exemplo altera o conteúdo de um <h1>elemento:
+
+Exemplo
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="id01">Old Heading</h1>
+
+<script>
+var element = document.getElementById("id01");
+element.innerHTML = "New Heading";
+</script>
+
+</body>
+</html>
 
 
+Exemplo explicado:
+ O documento HTML acima contém um <h1>elemento comid="id01"
+ Usamos o HTML DOM para obter o elemento com id="id01"
+ Um JavaScript altera o conteúdo ( innerHTML) desse elemento para "Novo Título"
+
+----------------------------------------------------------------
+
+Mudando o valor de um atributo
+Para alterar o valor de um atributo HTML, use esta sintaxe:
+
+document.getElementById(id).attribute = new value
+Este exemplo altera o valor do atributo src de um <img>elemento:
+
+Exemplo
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="myImage" src="smiley.gif">
+
+<script>
+document.getElementById("myImage").src = "landscape.jpg";
+</script>
+
+</body>
+</html>
+
+Exemplo explicado:
+ O documento HTML acima contém um <img>elemento comid="myImage"
+ Usamos o HTML DOM para obter o elemento com id="myImage"
+ Um JavaScript altera o src atributo desse elemento de "smiley.gif" para "landscape.jpg"
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+JavaScript HTML DOM - Alterando CSS
+
+ O HTML DOM permite que o JavaScript altere o estilo dos elementos HTML.
+
+Mudando o estilo do HTML
+ Para alterar o estilo de um elemento HTML, use esta sintaxe:
+
+document.getElementById(id).style.property = new style
+O exemplo a seguir altera o estilo de um <p>elemento:
+
+Exemplo
+
+<html>
+<body>
+
+<p id="p2">Hello World!</p>
+
+<script>
+document.getElementById("p2").style.color = "blue";
+</script>
+
+<p>The paragraph above was changed by a script.</p>
+
+</body>
+</html>
+
+----------------------------------------------------------------
+
+Usando eventos
+ O HTML DOM permite que você execute código quando ocorre um evento.
+
+ Os eventos são gerados pelo navegador quando "coisas acontecem" aos elementos HTML:
+ Um elemento é clicado
+ A página foi carregada
+ Os campos de entrada são alterados
+
+Este exemplo altera o estilo do elemento HTML com id="id1", quando o usuário clica em um botão:
+
+Exemplo
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="id1">My Heading 1</h1>
+
+<button type="button"
+onclick="document.getElementById('id1').style.color = 'red'">
+Click Me!</button>
+
+</body>
+</html>
+
+Mais exemplos
+Visibilidade Como tornar um elemento invisível. Quer mostrar o elemento ou não?
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="p1">
+This is a text.
+This is a text.
+This is a text.
+This is a text.
+</p>
+
+<input type="button" value="Hide text" onclick="document.getElementById('p1').style.visibility='hidden'">
+<input type="button" value="Show text" onclick="document.getElementById('p1').style.visibility='visible'">
+
+</body>
+</html>
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+Animação JavaScript HTML DOM
+Aprenda a criar animações HTML usando JavaScript.
+
+Uma página da web básica
+Para demonstrar como criar animações HTML com JavaScript, usaremos uma página da web simples:
+
+Exemplo
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript Animation</h1>
+
+<div id="animation">My animation will go here</div>
+
+</body>
+</html>
+
+Criar um contêiner de animação
+ Todas as animações devem ser relativas a um elemento de contêiner.
+
+Exemplo
+
+<div id ="container">
+  <div id ="animate">My animation will go here</div>
+</div>
+Defina o estilo dos elementos
+O elemento do contêiner deve ser criado com style = " position: relative".
+
+O elemento de animação deve ser criado com style = " position: absolute".
+
+Exemplo
+
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: red;
+}
+
+Código de Animação
+As animações JavaScript são feitas programando mudanças graduais no estilo de um elemento.
+
+As mudanças são chamadas por um cronômetro. Quando o intervalo do cronômetro é pequeno, a animação parece contínua.
+
+O código básico é:
+
+Exemplo
+var id = setInterval(frame, 5);
+
+function frame() {
+  if (/* test for finished */) {
+    clearInterval(id);
+  } else {
+    /* code to change the element style */ 
+  }
+}
 
 
+Crie a animação completa usando JavaScript
+Exemplo
+
+<!DOCTYPE html>
+<html>
+
+<style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+</style>
 
 
+<body>
+
+<p><button onclick="myMove()">Click Me</button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
 
 
+<script>
+var id = null;
+
+function myMove() {
+  var elem = document.getElementById("animate");   
+  var pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+
+
+</body>
+</html>
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+Eventos JavaScript HTML DOM
+O HTML DOM permite que o JavaScript reaja a eventos HTML:
+
+Reagindo aos eventos
+ Um JavaScript pode ser executado quando ocorre um evento, como quando um usuário clica em um elemento HTML.
+
+ Para executar o código quando um usuário clica em um elemento, adicione o código JavaScript a um atributo de evento HTML:
+
+onclick=JavaScript
+
+Exemplos de eventos HTML:
+Quando um usuário clica no mouse
+Quando uma página da web é carregada
+Quando uma imagem foi carregada
+Quando o mouse se move sobre um elemento
+Quando um campo de entrada é alterado
+Quando um formulário HTML é enviado
+Quando um usuário pressiona uma tecla
+Neste exemplo, o conteúdo do <h1>elemento é alterado quando um usuário clica nele:
+
+Exemplo
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1>
+
+</body>
+</html>
+
+----------------------------------------------------------------
+
+Neste exemplo, uma função é chamada a partir do manipulador de eventos:
+
+Exemplo
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 onclick="changeText(this)">Click on this text!</h1>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 onclick="changeText(this)">Click on this text!</h1>
+
+<script>
+function changeText(id) {
+  id.innerHTML = "Ooops!";
+}
+</script>
+
+</body>
+</html>
+
+----------------------------------------------------------------
+
+Atributos de evento HTML
+Para atribuir eventos a elementos HTML, você pode usar atributos de evento.
+
+Exemplo
+Atribua um evento onclick a um elemento de botão:
+
+<button onclick="displayDate()">Try it</button>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the date.</p>
+
+<button onclick="displayDate()">The time is?</button>
+
+<script>
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+<p id="demo"></p>
+
+</body>
+</html> 
+
+No exemplo acima, uma função chamada displayDate será executada quando o botão for clicado.
+----------------------------------------------------------------
+
+Atribuir eventos usando o HTML DOM
+O HTML DOM permite que você atribua eventos a elementos HTML usando JavaScript:
+
+Exemplo
+Atribua um evento onclick a um elemento de botão:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click "Try it" to execute the displayDate() function.</p>
+
+<button id="myBtn">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("myBtn").onclick = displayDate;
+
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+</body>
+</html> 
+
+
+No exemplo acima, uma função chamada displayDate é atribuída a um elemento HTML com o id="myBtn".
+A função será executada quando o botão for clicado.
+
+---------------------------------------------------------------------
+
+Os eventos onload e onunload
+ Os eventos onloade onunloadsão acionados quando o usuário entra ou sai da página.
+
+O onloadevento pode ser usado para verificar o tipo de navegador do visitante e a versão do navegador, e carregar a versão apropriada da página da web com base nas informações.
+
+Os eventos onloade onunloadpodem ser usados ​​para lidar com cookies.
+
+Exemplo
+<body onload="checkCookies()">
 
 
 
